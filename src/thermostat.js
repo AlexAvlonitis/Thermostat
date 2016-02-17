@@ -23,11 +23,13 @@ Thermostat.prototype.decreaseTemp = function(){
 
 Thermostat.prototype.switchPowerSavingOn = function(){
   this.powerSavingMode = true;
+  this.resetTemp();
   this.changeMaxTemp();
 };
 
 Thermostat.prototype.switchPowerSavingOff = function(){
   this.powerSavingMode = false;
+  this.resetTemp();
   this.changeMaxTemp();
 };
 

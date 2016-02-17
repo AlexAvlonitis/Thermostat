@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Thermostat</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -12,17 +13,24 @@
     <div id="inner-wrap">
       <h1>Thermostat</h1>
       <div id="panel">
-
+        <div id="degrees">
+          <h3>Degrees</h3>
+          <p class="degrees"></p>
+        </div>
+        <div id="psm">
+          <h3>Power Saving mode</h3>
+          <p class="psm"> </p>
+        </div>
       </div>
       <div id=temperature>
-        <button id="raise" type="button">UP</button>
-        <button type="button">DOWN</button>
-        <button type="button">RESET</button>
+        <button class="up" type="button">UP</button>
+        <button class="down" type="button">DOWN</button>
+        <button class="reset" type="button">RESET</button>
         <p>Temperature</p>
       </div>
       <div id=power-saving-mode>
-        <button type="button">ON</button>
-        <button type="button">OFF</button>
+        <button class="on" type="button">ON</button>
+        <button class="off" type="button">OFF</button>
         <p>Power saving mode</p>
       </div>
     </div>
