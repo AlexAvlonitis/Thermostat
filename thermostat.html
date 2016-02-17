@@ -2,12 +2,30 @@
 <html>
 <head>
   <title>Thermostat</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="src/thermostat.js"></script>
+  <script src="src/jquery.js"></script>
 </head>
 <body>
-  <button type="button">Riase Temperature!</button>
-  <button type="button">Lower Temperature!</button>
-  <button type="button">Power saving mode</button>
-  <button type="button">Reset Temperature!</button>
+  <div id="wrapper">
+    <div id="inner-wrap">
+      <h1>Thermostat</h1>
+      <div id="panel">
+
+      </div>
+      <div id=temperature>
+        <button id="raise" type="button">UP</button>
+        <button type="button">DOWN</button>
+        <button type="button">RESET</button>
+        <p>Temperature</p>
+      </div>
+      <div id=power-saving-mode>
+        <button type="button">ON</button>
+        <button type="button">OFF</button>
+        <p>Power saving mode</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
