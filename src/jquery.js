@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   $(".degrees").html(thermostat.degrees + " &#8451;");
 
-  $(".psm").html(psm());
+  $(".psm").addClass("led-green");
 
   $(".up").click(function(){
     thermostat.increaseTemp();
@@ -24,24 +24,15 @@ $(document).ready(function() {
 
   $(".on").click(function(){
     thermostat.switchPowerSavingOn();
-    psm();
-    $(".psm").html(psm());
+    $(".psm").removeClass("led-red");
+    $(".psm").addClass("led-green");
   });
 
   $(".off").click(function(){
     thermostat.switchPowerSavingOff();
-    psm();
-    $(".psm").html(psm());
+    $(".psm").removeClass("led-green");
+    $(".psm").addClass("led-red");
   });
-
-  function psm() {
-    var onOff = thermostat.powerSavingMode;
-    if(onOff) {
-      return "ON";
-    } else {
-      return "OFF";
-    }
-  }
 
   function displayDegreesChBg(){
     $(".degrees").html(thermostat.degrees + " &#8451;");
