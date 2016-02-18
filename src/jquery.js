@@ -41,11 +41,8 @@ $(document).ready(function() {
     var apiKey = "bb6b9c3be1f0e70e4d48e1c6dd867c00";
     var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=";
     $.getJSON(url + apiKey, function(data) {
-
       $(".city-weather").html(data.name + "  " + "<img src=http://openweathermap.org/img/w/" + data.weather[0].icon + ".png>" + " " + data.main.temp + "&#8451;" );
-
     });
-
   });
 
   function displayDegreesChBg(){
