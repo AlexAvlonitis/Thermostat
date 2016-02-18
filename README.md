@@ -1,5 +1,5 @@
 # Thermostat
-A thermostat simulation made in JS
+A thermostat simulation made in JS, CSS, Jquery, and Ajax calls to openWeather API.
 
 
 Specification:
