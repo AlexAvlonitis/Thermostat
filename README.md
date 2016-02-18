@@ -1,17 +1,20 @@
 # Thermostat
 A thermostat simulation made in JS
 
-Ideas for UI interactions 
 
-1. Button for raise temperature.
-2. Button for lower temperature.
-3. Button for powersaving on/off.
-4. Button to reset temperature to default.
+Specification:
 
-Ideas for UI display
+* Thermostat starts at 20 degrees
+* You can increase the temperature with the up button
+* You can decrease the temperature with the down button
+* The minimum temperature is 10 degrees
+* If power saving mode is on, the maximum temperature is 25 degrees
+* If power saving mode is off, the maximum temperature is 32 degrees
+* Power saving mode is on by default
+* You can reset the temperature to 20 by hitting the reset button
+* The thermostat should colour the display based on energy usage - < 18 is green, < 25 is yellow, otherwise red
 
-1. Temperature display.
-2. Colour display.
-3. Power saving on/off display.
+**Used Jasmine to Test-Drive Development of a thermostat**
+
 
 
