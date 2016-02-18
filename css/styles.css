@@ -12,33 +12,38 @@ h1 {
 
 #wrapper {
   width: 100%;
-  height: 600px;
+  height: 900px;
 }
 
 #inner-wrap {
   margin: 0 auto;
-  width: 500px;
+  width: 900px;
   text-align: center;
 }
 
-#temperature {
-  margin-top: 10px;
-  padding-top: 10px;
-  width: 300px;
+.temperature {
+  margin: 10px;
+  padding: 10px;
   background-color: white;
   float: left;
   border-radius: 20px;
   box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
 }
 
-#power-saving-mode {
-  margin-top: 10px;
-  padding-top: 10px;
-  width: 190px;
-  background-color: white;
-  float: right;
-  border-radius: 20px;
-  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+input {
+    border: 5px solid white;
+    -webkit-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 10px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 10px rgba(0,0,0,0.1);
+    box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 10px rgba(0,0,0,0.1);
+    padding: 8px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 5px 0;
 }
 
 .btn {
@@ -96,6 +101,10 @@ h1 {
 
 #psm{
   margin: 10px;
+}
+
+.city-weather {
+  font-size: 12px;
 }
 
 .led-red {
